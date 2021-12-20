@@ -1,0 +1,41 @@
+
+.users {
+  @include main;
+  
+  &__list {
+    @include list-unstyled;
+    padding: 18px 14px;
+    display: flex;
+    overflow: hidden;
+  }
+  &__image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 67px;
+    background: red;
+    border-radius: 50%;
+  }
+
+  &__item {
+    margin: 0 14px;
+    position: relative;
+
+    
+    img {
+      border: 3px solid #fff;
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.12px;
+    text-transform: lowercase;
+  }
+}
+

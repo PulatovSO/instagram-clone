@@ -4,12 +4,257 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
+
+  <title>Instagram</title>
 </head>
 <body>
 
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <div class="header__inner row align-items-center justify-content-center">
+        <a href="#" class="header__logo-wrap col">
+          <img src="img/Logo.png" alt="logo" class="header__logo">
+        </a>
+        <div class="header__search-wrap col">
+          <i class='bx bx-search-alt-2'></i>
+          <input type="search" class="header__search" aria-label="search" placeholder="Search">
+        </div>
+        <nav class="header__nav nav col">
+          <ul class="nav__list row justify-content-end">
+            <li class="nav__item nav__item--active"><button><img src="img/home.png" alt="icon"></button></li>
+            <li class="nav__item"><button><img src="img/direct.png" alt="icon"></button></li>
+            <li class="nav__item"><button><img src="img/explore.png" alt="icon"></button></li>
+            <li class="nav__item"><button><img src="img/like.png" alt="icon"></button></li>
+            <li class="nav__item"><button><img src="img/profile.png" alt="icon"></button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  
+  <main>
+    <div class="wrapper">
+      <aside class="side">
+        <div class="side__profile profile">
+          <a href="#" class="profile__image-wrap">
+            <img class="profile__pic" src="img/Profile-Pic-0.png" alt="profile picture">
+          </a>
+          <div class="profile__desc">
+            <a href="#" class="profile__username">shirleyromero</a>
+            <p class="profile__name">Shirley Romero</p>
+          </div>
+          <button class="profile__btn">Switch</button>
+        </div>
+        <div class="side__recommendation recommended">
+          <div class="recommended__desc">
+            <p class="recommended__text">Suggestions For You</p>
+            <button class="recommended__btn">See All</button>
+          </div>
+          <ul class="recommended__list">
+            <li class="recommended__item profile">
+                <a href="#" class="profile__image-wrap">
+                  <img class="profile__pic recommended__profile-pic" src="img/Profile-Pic-1.png" alt="profile picture">
+                </a>
+                <div class="profile__desc">
+                  <a href="#" class="profile__username">shirleyromero</a>
+                  <p class="profile__name">Followed by terylucas + 2 more</p>
+                </div>
+                <button class="profile__btn">Follow</button>
+            </li>
+            <li class="recommended__item profile">
+              <a href="#" class="profile__image-wrap">
+                <img class="profile__pic recommended__profile-pic" src="img/Profile-Pic-2.png" alt="profile picture">
+              </a>
+              <div class="profile__desc">
+                <a href="#" class="profile__username">shirleyromero</a>
+                <p class="profile__name">Followed by terylucas + 2 more</p>
+              </div>
+              <button class="profile__btn">Follow</button>
+            </li>
+            <li class="recommended__item profile">
+              <a href="#" class="profile__image-wrap">
+                <img class="profile__pic recommended__profile-pic" src="img/Profile-Pic-3.png" alt="profile picture">
+              </a>
+              <div class="profile__desc">
+                <a href="#" class="profile__username">shirleyromero</a>
+                <p class="profile__name">Followed by terylucas + 2 more</p>
+              </div>
+              <button class="profile__btn">Follow</button>
+            </li>
+            <li class="recommended__item profile">
+              <a href="#" class="profile__image-wrap">
+                <img class="profile__pic recommended__profile-pic" src="img/Profile-Pic-4.png" alt="profile picture">
+              </a>
+              <div class="profile__desc">
+                <a href="#" class="profile__username">shirleyromero</a>
+                <p class="profile__name">Followed by terylucas + 2 more</p>
+              </div>
+              <button class="profile__btn">Follow</button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main__body">
+        <section class="users">
+          <div class="users__wrap">
+            <ul class="users__list">
+              <li class="users__item">
+                <a class="users__link" href="#">
+                  <div class="users__image-wrap">
+                    <img src="img/Profile-Pic-0.png" alt="user" class="user__img">
+                  </div>
+                  <p class="users__name">Your Story</p>
+                </a>
+              </li>
+              <li class="users__item">
+                <a class="users__link" href="#">
+                  <div class="users__image-wrap">
+                    <img src="img/Profile-Pic-1.png" alt="user" class="user__img">
+                  </div>
+                  <p class="users__name">terrylucas</p>
+                </a>
+              </li>
+              <li class="users__item">
+                <a class="users__link" href="#">
+                  <div class="users__image-wrap">
+                    <img src="img/Profile-Pic-2.png" alt="user" class="user__img">
+                  </div>
+                  <p class="users__name">LauraMatt</p>
+                </a>
+              </li>
+              <li class="users__item">
+                <a class="users__link" href="#">
+                  <div class="users__image-wrap">
+                    <img src="img/Profile-Pic-3.png" alt="user" class="user__img">
+                  </div>
+                  <p class="users__name">harryprescott</p>
+                </a>
+              </li>
+              <li class="users__item">
+                <a class="users__link" href="#">
+                  <div class="users__image-wrap">
+                    <img src="img/Profile-Pic-4.png" alt="user" class="user__img">
+                  </div>
+                  <p class="users__name">ednamanz</p>
+                </a>
+              </li>
+              <li class="users__item">
+                <a class="users__link" href="#">
+                  <div class="users__image-wrap">
+                    <img src="img/Profile-Pic-5.png" alt="user" class="user__img">
+                  </div>
+                  <p class="users__name">christinaste</p>
+                </a>
+              </li>
+              <li class="users__item">
+                <a class="users__link" href="#">
+                  <div class="users__image-wrap">
+                    <img src="img/Profile-Pic-6.png" alt="user" class="user__img">
+                  </div>
+                  <p class="users__name">johnschmit</p>
+                </a>
+              </li>
+              <li class="users__item">
+                <a class="users__link" href="#">
+                  <div class="users__image-wrap">
+                    <img src="img/user.png" alt="user" class="user__img">
+                  </div>
+                  <p class="users__name">Your Story</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+        <section class="posts">
+          <div class="posts__wrap">
+            <div class="posts__post post">
+              <div class="post__top top">
+                <a class="top__link" href="#">
+                  <div class="top__image-wrap">
+                    <img src="img/Profile-Pic-1.png" alt="user" class="top__img">
+                  </div>
+                  <p class="top__name">Lucas Terry</p>
+                </a>
+                <button class="top__btn"><i class='bx bx-dots-horizontal-rounded'></i></button>
+              </div>
+              <img class="post__image" src="img/post-image.jpg" alt="image">
+              <div class="post__bottom bottom">
+                <ul class="bottom__icons">
+                  <li class="bottom__icon"><button><img src="img/like.png" alt="icon"></button></li>
+                  <li class="bottom__icon"><button><img src="img/comment.png" alt="icon"></button></li>
+                  <li class="bottom__icon"><button><img src="img/share.png" alt="icon"></button></li>
+                  <li class="bottom__icon"><button><img src="img/mark.png" alt="icon"></button></li>
+                </ul>
+                <p class="bottom__likes"><span class="bottom__like-count">1.067</span> likes</p>
+                <p class="bottom__desc">
+                  <span class="bottom__user-name">terrylucas</span> 
+                  Imperdiet in sit rhoncus, eleifend tellus augue lectus potenti pellentesque eleifend tellus
+                  <button class="bottom__btn btn-more">...more</button>
+                </p>
+                <button class="bottom__comments">View all 100 comments</button>
+                <p class="bottom__post-time">1 hour ago</p>
+              </div>
+              <div class="post__comment comment">
+                <img src="img/Emoji.png" alt="icon" class="comment__img">
+                <input class="comment__input" type="text" placeholder="add a comment">
+                <button class="comment__post btn-post">post</button>
+              </div>
+            </div>
+            <div class="posts__post post">
+              <div class="post__top top">
+                <a class="top__link" href="#">
+                  <div class="top__image-wrap">
+                    <img src="img/Profile-Pic-0.png" alt="user" class="top__img">
+                  </div>
+                  <p class="top__name">Shirley Romero</p>
+                </a>
+                <button class="top__btn"><i class='bx bx-dots-horizontal-rounded'></i></button>
+              </div>
+              <img class="post__image" src="img/post-image1.png" alt="image">
+              <div class="post__bottom bottom">
+                <ul class="bottom__icons">
+                  <li class="bottom__icon"><button><img src="img/like.png" alt="icon"></button></li>
+                  <li class="bottom__icon"><button><img src="img/comment.png" alt="icon"></button></li>
+                  <li class="bottom__icon"><button><img src="img/share.png" alt="icon"></button></li>
+                  <li class="bottom__icon"><button><img src="img/mark.png" alt="icon"></button></li>
+                </ul>
+                <p class="bottom__likes"><span class="bottom__like-count">1.067</span> likes</p>
+                <p class="bottom__desc">
+                  <span class="bottom__user-name">terrylucas</span> 
+                  Imperdiet in sit rhoncus, eleifend tellus augue lectus potenti pellentesque eleifend tellus
+                  <button class="bottom__btn btn-more">...more</button>
+                </p>
+                <button class="bottom__comments">View all 100 comments</button>
+                <p class="bottom__post-time">1 hour ago</p>
+              </div>
+              <div class="post__comment comment">
+                <img src="img/Emoji.png" alt="icon" class="comment__img">
+                <input class="comment__input" type="text" placeholder="add a comment">
+                <button class="comment__post btn-post">post</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+  <br><br><br><br><br>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,138 @@
+
+.post {
+  @include main;
+}
+
+.top {
+  padding: 9px 16px 7px 16px;
+  display: flex;
+  justify-content: space-between;
+ 
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__name {
+    margin-left: 21px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: lowercase;
+  }
+
+  &__btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.bottom {
+  padding: 15px 24px 0px 17px;
+
+  &__icons {
+    @include list-unstyled;
+    display: flex;
+    position: relative;
+  }
+
+  &__icon {
+    margin-right: 8px;
+
+    &:last-child {
+      position: absolute;
+      right: -16px;
+    }
+    
+    button {
+      margin: 0;
+      height: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__likes {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: lowercase;
+  }
+
+  &__user-name {
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+  
+  &__desc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__comments {
+    padding-left: 0;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    background: none;
+    border: none;
+    opacity: 0.5;
+  }
+
+  &__post-time {
+    margin: 0;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  &__btn {
+    position: relative;
+    left: -8px;
+    background: none;
+    border: none;
+    opacity: 0.5;
+  }
+}
+
+.comment {
+  margin-top: 17px;
+  padding: 14px 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $color-lightgray;
+
+  &__img {
+    margin-right: 16px;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+  }
+
+  &__post {
+    position: absolute;
+    right: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: $color-blue;
+    background: none;
+    border: none;
+    opacity: 0.5;
+  }
+}

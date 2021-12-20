@@ -1,0 +1,114 @@
+main {
+  .wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.main__body {
+  margin-right: 0;
+  position: absolute;
+  left: 0;
+}
+
+.side {
+  position: fixed;
+  top: 46;
+  padding-top: 46px;
+  width: 293px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__pic {
+    margin-right: 24px;
+    width: 56px;
+    height: 56px;
+  }
+
+  &__username {
+    margin: 0;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: lowercase;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: $color-gray;
+  }
+
+  &__btn {
+    @include button;
+    position: absolute;
+    right: 16px;
+    color: $color-blue;
+  }
+}
+
+
+.recommended {
+
+  &__desc {
+    margin-top: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: $color-gray;
+  }
+
+  &__btn {
+    margin-right: 16px;
+    @include button;
+  }
+
+  &__list {
+    @include list-unstyled;
+
+    .profile__pic {
+      margin-right: 12px;
+    }
+
+    .profile__username {
+      font-weight: normal;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .profile__name {
+      font-size: 12px;
+      line-height: 11px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 18px;
+  }
+
+  &__profile-pic {
+    width: 32px;
+    height: 32px;
+  }
+}
