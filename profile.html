@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <title>Instagram</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <div class="header__inner row align-items-center justify-content-center">
+        <a href="index.html" class="header__logo-wrap col">
+          <img src="img/Logo.png" alt="logo" class="header__logo">
+        </a>
+        <div class="header__search-wrap col">
+          <i class='loop-icon bx bx-search-alt-2'></i>
+          <input type="search" class="header__search" aria-label="search" placeholder="Search">
+        </div>
+        <nav class="header__nav nav col">
+          <ul class="nav__list row justify-content-end">
+            <li class="nav__item nav__item--active"><button><img src="img/home.png" alt="icon"></button></li>
+            <li class="nav__item"><button><img src="img/direct.png" alt="icon"></button></li>
+            <li class="nav__item"><button><img src="img/explore.png" alt="icon"></button></li>
+            <li class="nav__item"><button><img src="img/like.png" alt="icon"></button></li>
+            <li class="nav__item"><button><img src="img/profile.png" alt="icon"></button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  
+  <main>
+    <div class="wrapper">
+      <div class="posts">
+        <ul class="posts__tab tab">
+          <li class="tab__link"><button class="all active">posts</button></li>
+          <li class="tab__link"><button class="videos">videos</button></li>
+          <li class="tab__link"><button class="tagged">tagged</button></li>
+        </ul>
+        <div class="post-all"></div>
+        <div class="post-video"></div>
+        <div class="post-tagged"></div>
+        <div class="posts__inner inner">
+          <button class="inner__close"><i class='bx bx-x'></i></button>
+          <button class="inner__prev"><i class='bx bxs-left-arrow-circle'></i></button>
+          <button class="inner__next"><i class='bx bxs-right-arrow-circle'></i></button>
+          <img class="inner__image">
+          <div class="inner__comments"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
